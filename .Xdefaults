@@ -1,0 +1,94 @@
+!     __   __   _       __            _ _                          __ _       
+!     \ \ / /  | |     / _|          | | |                        / _(_)      
+!      \ V / __| | ___| |_ __ _ _   _| | |_ ___    ___ ___  _ __ | |_ _  __ _ 
+!       > < / _` |/ _ \  _/ _` | | | | | __/ __|  / __/ _ \| '_ \|  _| |/ _` |
+!    _ / . \ (_| |  __/ || (_| | |_| | | |_\__ \ | (_| (_) | | | | | | | (_| |
+!   (_)_/ \_\__,_|\___|_| \__,_|\__,_|_|\__|___/  \___\___/|_| |_|_| |_|\__, |
+!                                                                        __/ |
+!                                                                       |___/ 
+
+!--------------------------------------------------------------------------------
+! Xft settings: 								|
+!--------------------------------------------------------------------------------
+
+Xft.dpi:			96
+Xft.autohint:			0
+Xft.lcdfilter:			lcddefault
+Xft.hintstyle:			hintslight
+Xft.hinting:			1
+Xft.antialias:			1
+Xft.rgba:			rgb
+
+!--------------------------------------------------------------------------------
+! URxvt settings:								|						|
+!--------------------------------------------------------------------------------
+
+URxvt.depth:			32
+URxvt.geometry:			84x32
+URxvt.transparent:		0
+URxvt.fading:			0
+! URxvt.urgentOnBell:		1
+! URxvt.visualBell:		1
+URxvt.loginShell:		1
+URxvt.saveLines:		60
+URxvt.internalBorder:		2
+URxvt.lineSpace:		0
+
+! Fonts.
+URxvt.allow_bold:	1
+/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+URxvt*font: 			xft:Monospace:pixelsize=14
+URxvt*boldFont:			xft:Monospace:pixelsize=14
+
+! Fix font space.
+URxvt*letterSpace:		-1
+
+! Scrollbar.
+URxvt.scrollStyle:		rxvt
+URxvt.scrollBar:		0
+
+! Perl extensions.
+URxvt.perl-ext-common:		default,matcher
+URxvt.matcher.button:		1
+URxvt.urlLauncher:		chromium
+
+! Cursor.
+URxvt.cursorBlink:		1
+URxvt.cursorColor:		#657b83
+URxvt.cursorUnderline:		1
+
+! Pointer.
+URxvt.pointerBlank:		1
+
+*background:			#111111
+*foreground:			#886422
+!!*fading:			40
+*fadeColor:			#880000
+*cursorColor:			#880000
+*pointerColorBackground:	#586e75
+*pointerColorForeground:	#93a1a1
+
+! *color1:			#073642
+! *color2:			#073642
+! *color3:			#073642
+! *color4:			#073642
+! *color5:			#073642
+! *color6:			#073642
+! *color7:			#073642
+! *color8:			#073642
+! *color9:			#073642
+
+! green
+*color10:			#228822
+
+! *color11:			#073642
+
+! blue
+*color12:			#004088
+
+! *color13:			#073642
+
+! cyan
+*color14:			#006088
+
+! *color15:			#073642
