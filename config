@@ -11,7 +11,7 @@
 set 		$mod	Mod4
 
 # Font.
-font pango:	Raleway Light,Awesome 9
+font pango:	Raleway Light,FontAwesome 9
 
 # Thin borders.
 hide_edge_borders both
@@ -31,7 +31,7 @@ bindsym		$mod+Up			focus up
 bindsym		$mod+Right		focus right
 
 # Lock.
-bindsym		$mod+Shift+x		exec i3lock --color 589999
+bindsym		$mod+Shift+x		exec i3lock --color 661111
 
 # Move focused window.
 bindsym		$mod+Shift+h		move left
@@ -146,7 +146,7 @@ client.urgent		$urgent-bg-colour	$urgent-bg-colour	$text-colour		#00ff00
 
 # bar
 bar {
-	status_command i3blocks -c ~/.i3/i3blocks.conf
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
 	colors {
 		background $bg-colour
@@ -190,7 +190,7 @@ bindsym		XF86AudioPlay		exec playerctl play-pause
 bindsym		XF86AudioPause		exec playerctl play-pause
 bindsym		XF86AudioNext		exec playerctl next
 bindsym		XF86AudioPrev		exec playerctl previous
-bindsym		$mod+Shift+f		exec chromium
+bindsym		$mod+Shift+f		exec google-chrome-unstable
 bindsyn		$mod+Shift+l		exec libreoffice
 bindsym		$mod+Return 		exec i3-sensible-terminal
 bindsym		$mod+Shift+q		kill
@@ -199,4 +199,6 @@ bindsym		$mod+d			exec rofi -show run -lines 3 -eh 2 -width 60 -padding 20 -opac
 
 # startup
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper.*
-exec --no-startup-id compton -f
+exec redshift
+
+#exec --no-startup-id compton -f
