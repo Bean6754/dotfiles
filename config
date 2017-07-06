@@ -190,15 +190,16 @@ bindsym		XF86AudioPlay		exec playerctl play-pause
 bindsym		XF86AudioPause		exec playerctl play-pause
 bindsym		XF86AudioNext		exec playerctl next
 bindsym		XF86AudioPrev		exec playerctl previous
-bindsym		$mod+Shift+f		exec firefox-esr
+bindsym		$mod+Shift+f		exec firefox
 bindsyn		$mod+Shift+l		exec libreoffice
-bindsym		$mod+Return 		exec rxvt-unicode
+bindsym		$mod+Return 		exec urxvt
 bindsym		$mod+Shift+q		kill
 bindsym		Print			exec screenshot
 bindsym		$mod+d			exec rofi -show run -lines 3 -eh 2 -width 60 -padding 20 -opacity "85" -bw 0 -bc "$bg-colour" -bg "$bg-colour" -fg "$text-colour" -hlbg "$bg-colour" -hlfg "#955995" -font "Sans 11"
 
 # startup
-exec_always --no-startup-id feh --bg-scale ~/Pictures/CentOS/dark.png
-exec redshift
+exec_always --no-startup-id feh --bg-scale ~/Pictures/GNU/GNU_1920_1080_Dark.png
+exec redshift -l 51.4816:3.1791
+exec setxkbmap gb
 
 #exec --no-startup-id compton -f
