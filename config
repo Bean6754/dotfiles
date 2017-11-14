@@ -11,7 +11,8 @@
 set 		$mod	Mod4
 
 # Font.
-font pango:	Raleway Light,FontAwesome 9
+#font pango:	Raleway Light,FontAwesome 9
+font pango:	Sans,FontAwesome 9
 
 # Thin borders.
 hide_edge_borders both
@@ -131,10 +132,10 @@ mode "resize" {
 # resize mode
 bindsym		$mod+r mode "resize"
 
-set		$bg-colour		#111111
-set		$inactive-bg-colour	#000000
-set		$text-colour		#006600
-set		$inactive-text-colour	#004400
+set		$bg-colour		#441144
+set		$inactive-bg-colour	#331133
+set		$text-colour		#ff1174
+set		$inactive-text-colour	#c40008
 set		$urgent-bg-colour	#E53935
 
 # window colors
@@ -146,7 +147,8 @@ client.urgent		$urgent-bg-colour	$urgent-bg-colour	$text-colour		#00ff00
 
 # bar
 bar {
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	# status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	status_command i3status
 	position top
 	colors {
 		background $bg-colour
@@ -198,7 +200,8 @@ bindsym		Print			exec screenshot
 bindsym		$mod+d			exec rofi -show run -lines 3 -eh 2 -width 60 -padding 20 -opacity "85" -bw 0 -bc "$bg-colour" -bg "$bg-colour" -fg "$text-colour" -hlbg "$bg-colour" -hlfg "#955995" -font "Sans 11"
 
 # startup
-exec_always --no-startup-id feh --bg-scale ~/Pictures/GNU/GNU_1920_1080_Dark.png
+#exec_always --no-startup-id feh --bg-scale ~/Pictures/GNU/GNU_1920_1080_Dark.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/purple.jpg
 exec redshift -l 51.4816:3.1791
 exec setxkbmap gb
 
