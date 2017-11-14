@@ -53,15 +53,15 @@ URxvt.matcher.button:		1
 URxvt.urlLauncher:		firefox-esr
 
 ! Cursor.
-URxvt.cursorBlink:		1
-URxvt.cursorColor:		#002200
-URxvt.cursorUnderline:		1
+URxvt.cursorBlink:		0
+URxvt.cursorColor:		#00ee00
+URxvt.cursorUnderline:		0
 
 ! Pointer.
 URxvt.pointerBlank:		1
 
-*background:			#000000
-*foreground:			#006600
+*background:			#030007
+*foreground:			#00dd00
 !!*fading:			40
 *fadeColor:			#880000
 *cursorColor:			#880000
