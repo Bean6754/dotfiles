@@ -1,3 +1,5 @@
+" Set colour scheme.
+colorscheme koehler
 " Enable colour coding for Vim.
 syntax on
 " Set file encoding from ANSI to UTF-8.
