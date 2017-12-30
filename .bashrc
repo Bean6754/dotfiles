@@ -5,8 +5,6 @@
 #  _| |_) | (_| \__ \ | | | | | (__ 
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
 
-
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
