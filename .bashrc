@@ -22,7 +22,7 @@ filesize () {
 	name=$1
 	
 	if [[ -n "$name" ]]; then
-		ls -aGhl $name | awk -F " " {'print $5'}
+		ls -aGhl $name | awk -F " " {"print $5"}
 	else
 		echo "Argument error!"
 	fi
