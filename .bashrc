@@ -5,6 +5,8 @@
 #  _| |_) | (_| \__ \ | | | | | (__ 
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
 
+# REMINDER: Use ' for strings and " for programming.
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
