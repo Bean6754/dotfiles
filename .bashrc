@@ -18,7 +18,6 @@ export MAKEOPTS="-j4"
 export CXXFLAGS=$CFLAGS
 
 # Functions.
-
 filesize () {
 	name=$1
 	
