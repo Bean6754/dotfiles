@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  <zone target="ACCEPT|%%REJECT%%|DROP">
+-->
 <zone>
   <short>openSUSE-Server</short>
   <description>For use as an openSUSE-Server.</description>
