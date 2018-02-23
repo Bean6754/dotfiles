@@ -6,4 +6,4 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 " Fix potential Vim backspace issue.
-echo "set backspace=2" >> ~/.vimrc
+set backspace=2
