@@ -15,6 +15,7 @@ fi
 # Exports.
 # root: PS1='\033[01;33m\]\h\033[00m\]:\033[01;34m\]\w\033[01;31m\]\$\033[00m\] '
 export PS1='\033[01;33m\]\h\033[00m\]:\033[01;34m\]\w\033[01;32m\]\$\033[00m\] '
+export EDITOR="/usr/bin/vim"
 # export PATH="/folder/bin:$PATH"
 
 # Functions.
