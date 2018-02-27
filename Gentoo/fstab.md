@@ -1,7 +1,7 @@
 # Filesystems table.
 ## Location: /etc/fstab
 
-```<fs>            <mountpoint>                    <type>    <opts>                                                       <dump/pass>`
+```<fs>            <mountpoint>                    <type>    <opts>                                                       <dump/pass>
 
 UUID=<uuid>     /boot/efi                       vfat      defaults,noatime                                              0     2
 UUID=<uuid>     /boot                           btrfs     defaults,noauto,noatime,subvol=boot                           0     2
