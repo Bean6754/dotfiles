@@ -1,13 +1,27 @@
 # Filesystems table.
 ## Location: /etc/fstab
 
+# EXT4 or XFS.
+```
+<fs>            <mountpoint>                    <type>    <opts>            <dump/pass>
+
+UUID=<uuid>     /boot/efi                       vfat      defaults,noatime   0     2
+UUID=<uuid>     /boot                           btrfs     defaults,noatime   0     2
+UUID=<uuid>     /dev/mapper/encrypted-root      btrfs     defaults,noatime   0     1
+UUID=<uuid>     /dev/mapper/encrypted-home      btrfs     defaults,noatime   0     2
+UUID=<uuid>     none                            swap      sw                 0     0
+
+/dev/cdrom      /mnt/cdrom                      auto      noauto,ro          0     0
+```
+
+# BTRFS.
 ```
 <fs>            <mountpoint>                    <type>    <opts>                                                 <dump/pass>
 
 UUID=<uuid>     /boot/efi                       vfat      defaults,noatime                                       0     2
 UUID=<uuid>     /boot                           btrfs     defaults,noatime,subvol=boot                           0     2
-UUID=<uuid>     /dev/mapper/encrypted-root      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=root   0     0
-UUID=<uuid>     /dev/mapper/encrypted-home      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=home   0     0
+UUID=<uuid>     /dev/mapper/encrypted-root      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=root   0     1
+UUID=<uuid>     /dev/mapper/encrypted-home      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=home   0     2
 UUID=<uuid>     none                            swap      sw                                                     0     0
 
 /dev/cdrom      /mnt/cdrom                      auto      noauto,ro                                              0     0
@@ -26,6 +40,13 @@ UUID=<uuid>     none                            swap      sw                    
 `compress=lzo` Specific to btrfs. (See 'compression' below.)
 
 `sw` Specific to swap.
+
+## Pass (fsck).
+The 6th column (in bold) is the fsck option.
+
+    0 = Do not check.
+    1 = First file system (partition) to check; / (root partition) should be set to 1.
+    2 = All other filesystems to be checked.
 
 ## Compression.
 ### What are the differences between compression methods?
