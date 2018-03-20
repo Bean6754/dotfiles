@@ -1,0 +1,2 @@
+setenv EDITOR /opt/local/bin/vim
+setenv PATH /opt/local/bin:$PATH
