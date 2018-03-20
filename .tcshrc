@@ -1,2 +1,6 @@
+# Set history size to 100 lines.
+set history=100
+
 setenv EDITOR /opt/local/bin/vim
 setenv PATH /opt/local/bin:$PATH
+# set prompt=''
