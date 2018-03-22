@@ -9,7 +9,7 @@ You must restart firefox for the CSS to reload!
 `~/.mozilla/firefox/<profilestring>.default/chrome/userChrome.css`
 
 ## Extention list.
-[Dark Mode (WebExtention)](https://addons.mozilla.org/en-US/firefox/addon/dark-mode-webextension/)
+[Dark Mode.](https://addons.mozilla.org/en-US/firefox/addon/dark-mode-webextension/)
 
 [HTTPS Everywhere.](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/)
 
