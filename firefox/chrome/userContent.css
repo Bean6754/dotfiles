@@ -1,0 +1,6 @@
+@-moz-document url("about:home"), url("about:newtab") {
+  body {background-color: #222 !important;}
+}
+@-moz-document url("about:blank") {
+  *:empty:not([id]):not([style]) {background-color: #222 !important;}
+}
