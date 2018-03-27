@@ -1,3 +1,7 @@
+# Allow tab completion.
+set autoexpand
+set autolist
+
 # Set history size to 100 lines.
 set history=100
 # HISTFILE.
