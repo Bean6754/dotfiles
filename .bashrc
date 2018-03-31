@@ -34,3 +34,4 @@ filesize () {
 
 # Aliases.
 alias emacs='emacs -nw'
+alias ls='exa'
