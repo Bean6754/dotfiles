@@ -2,10 +2,10 @@
 
 ## Contents: 
 
-### fstab.md
+### partitioning/fstab.md
 
 Example fstab.
 
-### encryption.md
+### partitioning/encryption.md
 
 How to encryption LVM/LUKS properly (imo).
