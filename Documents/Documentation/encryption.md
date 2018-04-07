@@ -10,6 +10,8 @@ then
 
 `cryptsetup luksOpen /dev/sda3 crypt`
 
+to view cryptsetup header: `cryptsetup luksDump /dev/sda3`
+
 ## LVM.
 
 Create physical volume.
