@@ -70,7 +70,7 @@ HOOKS=(base udev autodetect modconf block encrypt lvm2 filesystems keyboard fsck
 #COMPRESSION_OPTIONS=()
 ```
 
-Note: 
+### NOTE: 
 
 `ext4` and `ext2` are added onto `MODULES()`.
 
