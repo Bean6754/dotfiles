@@ -1,6 +1,8 @@
 # mkinitcpio.conf
 
-## Example `mkinitcpio.conf` config (for LVM2 + LUKS encryption).
+## Location: `/etc/mkinitcpio.conf`.
+
+## Example mkinitcpio config (for LVM2 + LUKS encryption).
 ```
 # vim:set ft=sh
 # MODULES
