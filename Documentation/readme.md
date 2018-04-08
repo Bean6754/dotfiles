@@ -1,11 +1,19 @@
 # This directory contains documentation written in Markdown.
 
-## Contents: 
+## Contents:
 
-### partitioning/fstab.md
+### partitioning/1-partitioning.md
+
+How to setup partitions for LVM2 + LUKS properly (imo).
+
+### partitioning/2-fstab.md
 
 Example fstab.
 
-### partitioning/encryption.md
+### partitioning/3-mkinitcpio.md
 
-How to encryption LVM/LUKS properly (imo).
+Example mkinitcpio config.
+
+### partitioning/4-grub.md
+
+Example default grub config.
