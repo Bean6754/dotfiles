@@ -1,7 +1,9 @@
 # GNU GRand Unified Bootloader.
 ### (GRUB.)
 
-## Example `/etc/default/grub` config (for LVM2 + LUKS encryption).
+## Location: `/etc/default/grub`.
+
+## Example default grub config (for LVM2 + LUKS encryption).
 ```
 # GRUB boot loader configuration
 
