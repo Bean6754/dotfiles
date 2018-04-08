@@ -58,3 +58,9 @@ GRUB_DISABLE_RECOVERY=true
 # set 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"
 ```
+
+### NOTE: 
+
+`root=/dev/mapper/vg01-root cryptdevice=/dev/sda3:crypt` is added to `GRUB_CMDLINE_LINUX=""`.
+
+`#GRUB_ENABLE_CRYPTODISK=y` has been uncommented to `GRUB_ENABLE_CRYPTODISK=y`.
