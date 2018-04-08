@@ -1,4 +1,4 @@
-# Encryption.
+# Partitioning.
 
 ## cryptsetup.
 
@@ -12,7 +12,7 @@ then
 
 to view cryptsetup header: `cryptsetup luksDump /dev/sda3`
 
-## LVM.
+## LVM2.
 
 Create physical volume.
 
