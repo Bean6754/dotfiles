@@ -1,5 +1,5 @@
-# GNU Gra
-# (GRUB.)
+# GNU GRand Unified Bootloader.
+### (GRUB.)
 
 ## Example `/etc/default/grub` config (for LVM2 + LUKS encryption).
 ```
