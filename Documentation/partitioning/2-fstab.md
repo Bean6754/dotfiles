@@ -5,23 +5,23 @@
 ```
 <fs>            <mountpoint>                    <type>    <opts>            <dump/pass>
 
-UUID=<uuid>     /boot/efi                       vfat      defaults,noatime   0     2
-UUID=<uuid>     /boot                           btrfs     defaults,noatime   0     2
-UUID=<uuid>     /dev/mapper/encrypted-root      btrfs     defaults,noatime   0     1
-UUID=<uuid>     /dev/mapper/encrypted-home      btrfs     defaults,noatime   0     2
-UUID=<uuid>     none                            swap      sw                 0     0
+UUID=<uuid>     /boot/efi                        vfat     defaults,noatime      0     2
+UUID=<uuid>     /boot                           ext4     defaults,noatime      0     2
+UUID=<uuid>     /                               ext4     defaults,noatime      0     1
+UUID=<uuid>     /home                           ext4     defaults,noatime      0     2
+UUID=<uuid>     none                            swap     sw                    0     0
 
-/dev/cdrom      /mnt/cdrom                      auto      noauto,ro          0     0
+/dev/cdrom      /mnt/cdrom                      auto      noauto,ro            0     0
 ```
 
 # BTRFS.
 ```
 <fs>            <mountpoint>                    <type>    <opts>                                                 <dump/pass>
 
-UUID=<uuid>     /boot/efi                       vfat      defaults,noatime                                       0     2
+UUID=<uuid>     /boot/efi                        vfat      defaults,noatime                                       0     2
 UUID=<uuid>     /boot                           btrfs     defaults,noatime,subvol=boot                           0     2
-UUID=<uuid>     /dev/mapper/encrypted-root      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=root   0     1
-UUID=<uuid>     /dev/mapper/encrypted-home      btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=home   0     2
+UUID=<uuid>     /                               btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=root   0     1
+UUID=<uuid>     /home                           btrfs     defaults,compress=lzo,noatime,autodefrag,subvol=home   0     2
 UUID=<uuid>     none                            swap      sw                                                     0     0
 
 /dev/cdrom      /mnt/cdrom                      auto      noauto,ro                                              0     0
