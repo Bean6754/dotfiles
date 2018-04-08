@@ -1,4 +1,4 @@
-# mkinicpio.conf
+# mkinitcpio.conf
 
 ## Example `mkinitcpio.conf` config (for LVM2 + LUKS encryption).
 ```
