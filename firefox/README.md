@@ -1,12 +1,21 @@
 # My firefox configs.
 
 ## How to use.
-Place in: `~/.mozilla/firefox/<profilestring>.default/`
-  
-You must restart firefox for the CSS to reload!
+## Windows.
+Place in: `%appdatalocal%\Mozilla\Firefox\Profiles\<profilestring>.(dev-edition-)default\`
 
-### For example: 
-`~/.mozilla/firefox/<profilestring>.default/chrome/userChrome.css`
+You must restart Firefox for the CSS to reload!
+
+### For example:
+`%appdatalocal%\Mozilla\Firefox\Profiles\12345678.dev-edition-default\chrome\userChrome.css`
+
+## Linux.
+Place in: `~/.mozilla/firefox/<profilestring>.(dev-edition-)default/`
+  
+You must restart Firefox for the CSS to reload!
+
+### For example:
+`~/.mozilla/firefox/12345678.dev-edition-default/chrome/userChrome.css`
 
 ## Extention list.
 [Dark Mode.](https://addons.mozilla.org/en-US/firefox/addon/dark-mode-webextension/)
