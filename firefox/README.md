@@ -2,12 +2,12 @@
 
 ## How to use.
 ## Windows.
-Place in: `%appdatalocal%\Mozilla\Firefox\Profiles\<profilestring>.(dev-edition-)default\`
+Place in: `%localappdata%\Mozilla\Firefox\Profiles\<profilestring>.(dev-edition-)default\`
 
 You must restart Firefox for the CSS to reload!
 
 ### For example:
-`%appdatalocal%\Mozilla\Firefox\Profiles\12345678.dev-edition-default\chrome\userChrome.css`
+`%localappdata%\Mozilla\Firefox\Profiles\12345678.dev-edition-default\chrome\userChrome.css`
 
 ## Linux.
 Place in: `~/.mozilla/firefox/<profilestring>.(dev-edition-)default/`
