@@ -33,6 +33,8 @@ UUID=<uuid>     none                            swap      sw                    
 
 `defaults` Use default options: rw, suid, dev, exec, auto, nouser, and async.
 
+`discard` Enables TRIM (for SSDs).
+
 `noauto` Does not automatically mount at boot. Can still be mounted via the `mount -a` command.
 
 `compress=lzo` Specific to btrfs. (See 'compression' below.)
