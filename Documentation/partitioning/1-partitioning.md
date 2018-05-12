@@ -2,9 +2,9 @@
 
 ## cryptsetup.
 
-`cryptsetup -v -c aes-xts-plain64 -s 512 -h sha512 -i 4000 --use-urandom -y luksFormat /dev/sda3`
+`cryptsetup -v -c aes-xts-plain64 -s 512 -h sha512 -i 10000 --use-urandom -y luksFormat /dev/sda3`
 
-(cryptsetup -v --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 4000 --use-urandom --verify-passphrase luksFormat /dev/sda3)
+(cryptsetup -v --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 10000 --use-urandom --verify-passphrase luksFormat /dev/sda3)
 
 then
 
