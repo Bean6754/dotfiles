@@ -1,6 +1,19 @@
 # My firefox configs.
 
 ## How to use.
+
+## SeaMonkey.
+
+## Mac.
+Place in: `~/Library/Application Support/SeaMonkey/Profiles/<profilestring>.default/`
+
+You must restart SeaMonkey for the CSS to reload!
+
+### For example:
+`~/Library/Application Support/SeaMonkey/Profiles/12345678.default/chrome/userChrome.css`
+
+## Firefox.
+
 ## Windows.
 Place in: `%appdata%\Mozilla\Firefox\Profiles\<profilestring>.(dev-edition-)default\`
 
