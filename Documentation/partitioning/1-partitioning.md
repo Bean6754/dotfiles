@@ -25,8 +25,8 @@ Create volume group.
 Create logical volume partitions.
 
 ```
-lvcreate -L 8GiB -n swap vg01
-lvcreate -l100%FREE -n root vg01
+lvcreate -L 8GiB -n swap vgroot <!-- You could also use vg01/02/03/etc.. -->
+lvcreate -l100%FREE -n root vgroot
 ```
 
 Rescan LVM.
