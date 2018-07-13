@@ -13,19 +13,19 @@ then
 to view cryptsetup header: `cryptsetup luksDump /dev/sda3`
 
 ## LVM2.
-
+<!-- You could also use vg01/02/03/etc.. -->
 Create physical volume.
 
 `pvcreate /dev/mapper/crypt`
 
 Create volume group.
 
-`vgcreate vg01 /dev/mapper/crypt`
+`vgcreate vgroot /dev/mapper/crypt`
 
 Create logical volume partitions.
 
 ```
-lvcreate -L 8GiB -n swap vgroot <!-- You could also use vg01/02/03/etc.. -->
+lvcreate -L 8GiB -n swap vgroot
 lvcreate -l100%FREE -n root vgroot
 ```
 
@@ -38,6 +38,6 @@ vgchange -ay
 
 ## Create filesystems.
 
-Swap: `mkswap /dev/vg01/swap -L 'swap' && swapon /dev/vg01/swap`
+Swap: `mkswap /dev/vgroot/swap -L 'swap' && swapon /dev/vgroot/swap`
 
-Root: `mkfs.ext4 -jv /dev/vg01/root -L 'root'`
+Root: `mkfs.ext4 -jv /dev/vgroot/root -L 'root'`
