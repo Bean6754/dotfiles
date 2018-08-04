@@ -25,6 +25,9 @@
 ;; Disable toolbar.
 (menu-bar-mode -1)
 
+;; Disable backups.
+(setq make-backup-files nil)
+
 ;; Set line numbers to display.
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
