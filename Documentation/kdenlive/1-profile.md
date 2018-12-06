@@ -1,5 +1,9 @@
 ## WebM.
 
+### Group `Custom`
+
+### Profile name `WebM - the widespread free format (VP8/Vorbis)`
+
 ### Extention `webm`
 
 ### Parameters (see [MLT documentation](https://www.mltframework.org/plugins/ConsumerAvformat/))
