@@ -2,7 +2,7 @@
 
 ### Extention `webm`
 
-### Parameters (see (MLT documentation)[https://www.mltframework.org/plugins/ConsumerAvformat/])
+### Parameters (see [MLT documentation](https://www.mltframework.org/plugins/ConsumerAvformat/))
 
 ```
 f=webm vcodec=libvpx acodec=libvorbis crf=%quality vb=0 quality=good aq=%audioquality max-intra-rate=1000 frame_rate_num=60 frame_rate_den=1
@@ -29,4 +29,4 @@ cpu-used=4
 cpu-used=5
 ```
 
-#### More (MLT documentation)[https://www.mltframework.org/docs/profiles/]
+#### More [MLT documentation](https://www.mltframework.org/docs/profiles/)
