@@ -14,15 +14,15 @@ f=webm vcodec=libvpx acodec=libvorbis crf=%quality vb=0 quality=good aq=%audioqu
 
 Video
 
-  Qualities `15,45`
+  * Qualities `15,45`
 
-  Default quality `0`
+  * Default quality `0`
 
 Audio
 
-  Qualities `7,3`
+  * Qualities `7,3`
 
-  Default quality `0`
+  + Default quality `0`
 
 Speed options
 
