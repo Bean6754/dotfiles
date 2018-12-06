@@ -7,6 +7,9 @@
 Save as 'kdenlive_stop.bat':
 
 ```
+@echo off
+color f0
+
 taskkill /IM "kioslave.exe" /T /F
 taskkill /IM "kdenlive.exe" /T /F
 taskkill /IM "dbus-daemon.exe" /T /F
