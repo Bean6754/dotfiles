@@ -8,9 +8,9 @@ Extention `webm`
 
 Parameters (see [MLT documentation](https://www.mltframework.org/plugins/ConsumerAvformat/))
 
-```
-f=webm vcodec=libvpx acodec=libvorbis crf=%quality vb=0 quality=good aq=%audioquality max-intra-rate=1000 frame_rate_num=60 frame_rate_den=1
-```
+  ```
+  f=webm vcodec=libvpx acodec=libvorbis crf=%quality vb=0 quality=good aq=%audioquality max-intra-rate=1000 frame_rate_num=60 frame_rate_den=1
+  ```
 
 Video
 
@@ -22,7 +22,7 @@ Audio
 
   * Qualities `7,3`
 
-  + Default quality `0`
+  * Default quality `0`
 
 Speed options
 
