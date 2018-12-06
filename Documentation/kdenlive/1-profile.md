@@ -1,6 +1,6 @@
 ## WebM.
 
-#### Summary: Added 'frame_rate_num=60 frame_rate_den=1' to Parameters.
+#### Summary: Added 'frame_rate_num=60 frame_rate_den=1' to Parameters to change video from 25fps to 60fps.
 
 Group `Custom`
 
