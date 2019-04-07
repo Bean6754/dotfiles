@@ -1,6 +1,6 @@
 include /usr/share/nano/*.nanorc
 set constantshow
 set morespace
-set nohelp
+set help
 set tabstospaces
 set tabsize 4
