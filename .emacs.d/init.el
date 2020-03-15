@@ -15,3 +15,7 @@
 ;; %p = am/pm.
 (setq display-time-format "%l:%M(%p)")
 (display-time-mode 1)
+
+;; Theme.
+(setq theme-file "~/.emacs.d/theme.el")
+(load theme-file)
