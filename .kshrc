@@ -10,5 +10,8 @@ EDITOR=/usr/bin/vim
 BROWSER=/usr/bin/firefox
 export EDITOR BROWSER
 
+# Bindings.
+bind -m '^L'=clear'^J'
+
 # Tab-completion (Vim-like).
 set -o vi
