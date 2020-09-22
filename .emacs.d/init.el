@@ -16,6 +16,11 @@
 (setq display-time-format "%l:%M(%p)")
 (display-time-mode 1)
 
+;; Set html-mode for .php files.
+(setq auto-mode-alist
+      (append '((".*\\.php\\'" . html-mode))
+              auto-mode-alist))
+
 ;; Theme.
 (setq theme-file "~/.emacs.d/theme.el")
 (load theme-file)
