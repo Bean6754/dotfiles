@@ -74,7 +74,7 @@ Generate `/etc/adjtime`.
 
 Comment out `en_GB.UTF-8 UTF-8` in `/etc/locale.gen`.
 
-Run `/etc/locale.gen`.
+Run `locale-gen`.
 
 Change `/etc/locale.conf`.
 
