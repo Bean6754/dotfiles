@@ -76,9 +76,15 @@ Comment out `en_GB.UTF-8 UTF-8` in `/etc/locale.gen`.
 
 Run `/etc/locale.gen`.
 
+Change `/etc/locale.conf`.
+
 Add `LANG=en_GB.UTF-8` to `/etc/locale.conf`.
 
+Change `/etc/vconsole.conf`.
+
 Add `KEYMAP=uk` to `/etc/vconsole.conf`.
+
+Set hostname.
 
 Add a hostname to `/etc/hostname`.
 
