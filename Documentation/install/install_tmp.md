@@ -111,7 +111,7 @@ Install GRUB.
 
 `grub-install --target=i386-pc --recheck /dev/sda`
 
-Edit `GRUB_CMDLINE_LINUX=""` to `GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:luks:allow-discards"` in `/etc/defualt/grub`.
+Edit `GRUB_CMDLINE_LINUX=""` to `GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda3:luks:allow-discards"` in `/etc/defualt/grub`.
 
 Generate GRUB config.
 
