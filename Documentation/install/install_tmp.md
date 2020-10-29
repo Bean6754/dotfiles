@@ -54,7 +54,7 @@ Mount partitions.
 
 Install base packages to drive.
 
-`pacstrap /mnt base base-devel linux linux-firmware grub dhcpcd wpa_supplicant`
+`pacstrap /mnt base base-devel linux linux-firmware grub lvm2 emacs dhcpcd wpa_supplicant`
 
 Generate fstab to help bootloader and kernel auto-mount stuff.
 
@@ -66,8 +66,55 @@ Chroot into nearly created install.
 
 Configure timezone.
 
-`ln -sf`
+`ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime`
 
-.....
+Generate `/etc/adjtime`.
+
+`hwclock --systohc`
+
+Comment out `en_GB.UTF-8 UTF-8` in `/etc/locale.gen`.
+
+Run `/etc/locale.gen`.
+
+Add `LANG=en_GB.UTF-8` to `/etc/locale.conf`.
+
+Add `KEYMAP=uk` to `/etc/vconsole.conf`.
+
+Add a hostname to `/etc/hostname`.
+
+Add these lines into `/etc/hosts` (replacing `myhostname` with your hostname and `localdomain` with your local domain name).
+
+```
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname
+```
+
+Edit `/etc/mkinitcpio.conf`.
+
+```
+Add 'ext4' to MODULES.
+Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
+```
+
+Generate initramfs.
+
+`mkinitcpio -P`
 
 Install GRUB.
+
+`grub-install --target=i386-pc --recheck /dev/sda`
+
+Edit `GRUB_CMDLINE_LINUX=""` to `GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:luks:allow-discards"` in `/etc/defualt/grub`.
+
+Generate GRUB config.
+
+`grub-mkconfig -o /boot/grub/grub.cfg`
+
+Set a root password.
+
+`passwd`
+
+Enable dhcpcd.
+
+`systemctl enable dhcpcd`
