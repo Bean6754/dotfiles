@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh-keygen -t rsa -f ~/.ssh/id_rsa
+ssh-keygen -o -t ed25519 -a 128 -C "" -f ~/.ssh/id_ed25519
