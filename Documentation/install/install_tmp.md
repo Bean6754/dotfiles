@@ -21,7 +21,7 @@ Partition disk.
 
 Format partitions.
 
-`mkfs.msdos -F 32 /dev/sda1 -n 'efi'`
+`mkfs.fat -F32 /dev/sda1 -n 'efi'`
 `mkfs.ext4 -jv /dev/sda2 -L 'boot'`
 
 Create and open LUKS encryption partition.
