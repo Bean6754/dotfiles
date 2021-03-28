@@ -7,7 +7,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 " Fix potential Vim backspace issue.
 set backspace=2
-" Set tab as 2 spaces.
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+" Set tab as 4 spaces.
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Enable line numbers.
 set number
