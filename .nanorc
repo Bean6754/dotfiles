@@ -4,5 +4,9 @@
 # (_)_| |_|\__,_|_| |_|\___/|_|  \___|
 
 include /usr/share/nano/*.nanorc
-unset tabstospaces
+
+set autoindent
+set speller "aspell -x -c "
 set tabsize 4
+
+unset tabstospaces
