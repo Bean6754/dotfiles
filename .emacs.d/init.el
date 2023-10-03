@@ -24,3 +24,11 @@
 ;; Theme.
 (setq theme-file "~/.emacs.d/theme.el")
 (load theme-file)
+
+;; Evil mode.
+;; Enable MELPA for initial evil mode installation ('M-x package-refresh-contents' then 'M-x package-install RET evil').
+;; (require 'package)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;; (package-initialize)
+(require 'evil)
+(evil-mode 1)
