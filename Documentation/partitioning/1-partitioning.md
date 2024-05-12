@@ -1,5 +1,14 @@
 # Partitioning.
 
+## EFI and boot filesystems.
+EFI partition.
+
+`mkfs.vfat -F 32 /dev/sda1 -n 'efi'`
+
+Boot partition.
+
+`mkfs.ext4 -jv /dev/sda2 -L 'boot'`
+
 ## cryptsetup.
 
 `cryptsetup -v -c aes-xts-plain64 -s 512 -h sha512 -i 4000 --use-urandom -y luksFormat /dev/sda3`
