@@ -26,7 +26,8 @@ Create logical volume partitions.
 
 ```
 lvcreate -L 8GiB -n swap vgroot
-lvcreate -l100%FREE -n root vgroot
+lvcreate -L 40GiB -n root vgroot
+lvcreate -l100%FREE -n home vgroot
 ```
 
 Rescan LVM.
@@ -40,4 +41,6 @@ vgchange -ay
 
 Swap: `mkswap /dev/vgroot/swap -L 'swap' && swapon /dev/vgroot/swap`
 
-Root: `mkfs.ext4 -jv /dev/vgroot/root -L 'root'`
+Root: `mkfs.xfs -f /dev/vgroot/root -L 'root'`
+
+Home: `mkfs.xfs -f /dev/vgroot/home -L 'home'`
