@@ -11,3 +11,5 @@ set backspace=2
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 " Enable line numbers.
 set number
+" Remap a few keys for Windows behavior
+source ~/.config/vim/mswin.vim
