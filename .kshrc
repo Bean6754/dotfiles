@@ -5,10 +5,11 @@ export HISTSIZE HISTFILE
 
 #PATH=
 #TERM=
-#PS1=
+#root PS1='\[\e[94m\]\h\[\e[91m\]#\[\e[0m\] \[\e[38;5;202m\]'
+PS1='\[\e[94m\]\h\[\e[92m\]\\$\[\e[0m\] \[\e[38;5;202m\]'
 EDITOR=/usr/bin/vim
 BROWSER=/usr/bin/firefox
-export EDITOR BROWSER
+export PS1 EDITOR BROWSER
 
 # Bindings.
 bind -m '^L'=clear'^J'
