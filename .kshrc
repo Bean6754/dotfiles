@@ -1,5 +1,5 @@
 # Setup command history file.
-HISTSIZE=100
+HISTSIZE=1000
 HISTFILE=.ksh_history
 export HISTSIZE HISTFILE
 
