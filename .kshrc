@@ -1,18 +1,19 @@
-# Setup command history file.
-HISTSIZE=1000
-HISTFILE=.ksh_history
-export HISTSIZE HISTFILE
+# $OpenBSD: dot.profile,v 1.8 2022/08/10 07:40:37 tb Exp $
+#
+# sh/ksh initialization
 
-#PATH=
-#TERM=
-#root PS1='\[\e[94m\]\h\[\e[91m\]#\[\e[0m\] \[\e[38;5;202m\]'
-PS1='\[\e[94m\]\h\[\e[92m\]\\$\[\e[0m\] \[\e[38;5;202m\]'
-EDITOR=/usr/bin/vim
-BROWSER=/usr/bin/firefox
-export PS1 EDITOR BROWSER
+PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
+export PATH HOME TERM
 
-# Bindings.
-bind -m '^L'=clear'^J'
+#HISTSIZE=1000
+#HISTFILE=.ksh_history
+#export HISTSIZE HISTFILE
 
-# Tab-completion (Vim-like).
-set -o vi
+export PS1=$(print '\033[33m\h\033[32m\$\033[00m ')
+#root - export PS1=$(print '\033[33m\h\033[31m\$\033[00m ')
+export EDITOR="vim"
+## Aliases break without this line.
+alias doas='doas '
+alias ls='colorls -G'
+## Fix arrow-keys.
+set -o emacs
