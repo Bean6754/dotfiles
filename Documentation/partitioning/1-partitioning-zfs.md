@@ -78,22 +78,22 @@ encswap /dev/disk/by-id/drive-BRAND_SPECS-part4 /dev/urandom plain,cipher=aes-xt
 
 ## ZFS zpool.
 
-`zpool create -f -o ashift=12 -O encryption=on -o keyformat=passphrase -O keylocation=prompt -O pbkdf2iters=6400000 -R /mnt zpool`
+`zpool create -f -o ashift=12 -O encryption=aes-256-gcm -o keyformat=passphrase -O keylocation=prompt -O pbkdf2iters=6400000 -R /mnt zroot /dev/sda4`
 
 ## ZFS datasets.
 
-`zfs create -o mountpoint=/ zpool/ROOT`
+`zfs create -o mountpoint=/ zroot/ROOT`
 
-`zfs create -o mountpoint=/usr zpool/ROOT/usr`
+`zfs create -o mountpoint=/usr zroot/ROOT/usr`
 
-  - `zfs set quota=30G zpool/ROOT/usr`
+  - `zfs set quota=30G zroot/ROOT/usr`
 
-`zfs create -o mountpoint=/var zpool/ROOT/var`
+`zfs create -o mountpoint=/var zroot/ROOT/var`
 
-  - `zfs set quota=10G zpool/ROOT/var`
+  - `zfs set quota=10G zroot/ROOT/var`
 
-`zfs create -o mountpoint=/var/tmp zpool/ROOT/var/tmp`
+`zfs create -o mountpoint=/var/tmp zroot/ROOT/var/tmp`
 
-  - `zfs set quota=4G zpool/ROOT/var/tmp`
+  - `zfs set quota=4G zroot/ROOT/var/tmp`
 
-`zfs create -o mountpoint=/home zpool/ROOT/home`
+`zfs create -o mountpoint=/home zroot/ROOT/home`
