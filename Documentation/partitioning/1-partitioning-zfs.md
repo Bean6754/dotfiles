@@ -78,7 +78,7 @@ encswap /dev/disk/by-id/drive-BRAND_SPECS-part4 /dev/urandom plain,cipher=aes-xt
 
 ## ZFS zpool.
 
-`zpool create -f -o ashift=12 -O atime=off -O compression=lz4 -O encryption=aes-256-gcm -o keyformat=passphrase -O keylocation=prompt -O pbkdf2iters=6400000 -R /mnt zroot /dev/sda4`
+`zpool create -f -o ashift=12 -O atime=off -O compression=lz4 -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt -O pbkdf2iters=6400000 -R /mnt zroot /dev/sda4`
 
 Most modern drives are 4096KiB physical sector size and setting to lower ashift will give a performance penalty whereas setting `ashift=12` on a 512B physical sector size drive will occur a minimal maximum-space penalty.
 
