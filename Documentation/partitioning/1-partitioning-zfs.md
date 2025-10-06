@@ -15,13 +15,15 @@ Boot partition.
 
 Zero partition (run `dd` command once on an SSD or 7 times on a mechanical HDD) to ensure it is blank before formatting. Prevent data leaks as encswap should only encrypt start+growing, not entire partition (otherwise your boot-time would be like 10-20 minutes+ lol).
 
-`dd if=/dev/zero of=/dev/disk/by-id/nvme-BRAND_SPECS-part4 bs=8M && sync`
+`dd if=/dev/zero of=/dev/disk/by-id/drive-BRAND_SPECS-part4 bs=8M && sync`
+
+Create swap filesystem on zeroed partition.
 
 `mkswap /dev/sda3 -L 'swap'`
 
-`/etc/crypttab`:
+_/etc/crypttab_:
 ```
-encswap /dev/disk/by-id/nvme-BRAND_SPECS-part4 /dev/urandom plain,cipher=aes-xts-plain64,size=512,swap
+encswap /dev/disk/by-id/drive-BRAND_SPECS-part4 /dev/urandom plain,cipher=aes-xts-plain64,size=512,swap
 ```
 
 ## ZFS zpool.
