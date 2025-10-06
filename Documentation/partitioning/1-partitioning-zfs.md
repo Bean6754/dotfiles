@@ -2,6 +2,28 @@
 
 ## IN TESTING!
 
+## Wipe partition-layout of drive (WARNING: Any data will be lost, although data-leaks possible).
+
+`wipefs -a /dev/sda`
+
+Super paranoid method to prevent data-leaks:
+
+  - 1-pass for SSD/NVMe or 7-pass for mechanical HDD.
+
+`dd if=/dev/zero of=/dev/sda bs=8M && sync`
+
+Even though `swap` is crypttab-urandom-encswap and `zpool` is ZFS-passphrase-encrypted there could be data-leaks if drive is not zeroed due to encryption being "encrypt from now" and not "encrypt entire drive".
+
+## Create GPT partition-scheme.
+
+`fdisk /dev/sda`
+
+Then run commands through stdin/input:
+
+`g (enter)`
+`w (enter)`
+`q (enter)`
+
 ## EFI and boot filesystems.
 EFI partition.
 
@@ -14,6 +36,8 @@ Boot partition.
 ## Swap partition (will be encrypted with encswp in /etc/crypttab).
 
 Zero partition (run `dd` command once on an SSD or 7 times on a mechanical HDD) to ensure it is blank before formatting. Prevent data leaks as encswap should only encrypt start+growing, not entire partition (otherwise your boot-time would be like 10-20 minutes+ lol).
+
+Technically you should also do this on the entire drive if you're paranoid about data-leaks. Once on SSD and 7 times on mechanical HDD.
 
 `dd if=/dev/zero of=/dev/disk/by-id/drive-BRAND_SPECS-part4 bs=8M && sync`
 
