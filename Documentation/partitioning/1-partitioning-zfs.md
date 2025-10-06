@@ -30,14 +30,14 @@ encswap /dev/disk/by-id/nvme-BRAND_SPECS-part5 /dev/urandom plain,cipher=aes-xts
 
 `zfs create -o mountpoint=/usr zpool/ROOT/usr`
 
-`zfs set quota=30G zpool/ROOT/usr`
+  - `zfs set quota=30G zpool/ROOT/usr`
 
 `zfs create -o mountpoint=/var zpool/ROOT/var`
 
-`zfs set quota=10G zpool/ROOT/var`
+  - `zfs set quota=10G zpool/ROOT/var`
 
 `zfs create -o mountpoint=/var/tmp zpool/ROOT/var/tmp`
 
-`zfs set quota=4G zpool/ROOT/var/tmp`
+  - `zfs set quota=4G zpool/ROOT/var/tmp`
 
 `zfs create -o mountpoint=/home zpool/ROOT/home`
