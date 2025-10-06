@@ -35,13 +35,7 @@ Boot partition.
 
 ## Swap partition (will be encrypted with encswp in /etc/crypttab).
 
-Zero partition (run `dd` command once on an SSD or 7 times on a mechanical HDD) to ensure it is blank before formatting. Prevent data leaks as encswap should only encrypt start+growing, not entire partition (otherwise your boot-time would be like 10-20 minutes+ lol).
-
-Technically you should also do this on the entire drive if you're paranoid about data-leaks. Once on SSD and 7 times on mechanical HDD.
-
-`dd if=/dev/zero of=/dev/disk/by-id/drive-BRAND_SPECS-part4 bs=8M && sync`
-
-Create swap filesystem on zeroed partition.
+Create swap filesystem.
 
 `mkswap /dev/sda3 -L 'swap'`
 
